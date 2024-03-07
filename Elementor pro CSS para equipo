@@ -1,0 +1,59 @@
+Agregar este codigo al CSS de Elementor
+
+<style>
+	.elementor-loop-container{
+		position: relative;
+	}
+ .e-loop-item, .tab-testimonial-bio-wrapper{
+		position:static;
+	}
+	.tab-testimonial-bio-image img{
+		height: 100%;
+	}
+	
+	.tab-testimonial-triangle{
+	display: none;
+  width: 0; 
+  height: 0; 
+  border-left: 37px solid transparent;
+  border-right: 37px solid transparent;
+  border-bottom: 37px solid #f5f5f5;
+	margin:20px auto 0;
+}
+	/*Change color*/
+	.tab-testimonial-bio-content{
+ background-color: green ;
+}
+	.tab-testimonial-triangle{
+     border-bottom-color: green;
+    }
+	/*End of change color*/
+	
+ .tab-testimonial-bio-content {
+	 display: none;
+      position: absolute;
+      left: 50%;
+      transform: translatex(-50%);
+      top: 0;
+      overflow: hidden;
+      width: 1200px;
+      max-width: 95%;
+ }
+.tab-testimonial-close{
+	cursor: pointer;
+}
+.tab-testimonial-bio-wrapper .elementor-widget-image.active{
+	cursor: pointer;
+}
+.tab-testimonial-triangle{
+	display: none;
+        width: 0; 
+        top: 0;
+	cursor: pointer;
+}
+	@media screen and (max-width: 450px){
+		.tab-testimonial-bio-content .elementor-element.elementor-element-c2eae00{
+			padding:0 30px;
+		}
+	}
+</style>
